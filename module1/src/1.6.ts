@@ -26,3 +26,4 @@ const arr : number[] = [1,4,8]
 
 const newArray = arr.map((elem:number):number => elem *elem )
 }
+// end
