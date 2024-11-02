@@ -31,12 +31,18 @@ type FrontendDeveloper = {
 
 type BackendDeveloper = {
     skills: string[],
-    designation2: 'Frontend Developer'
+    designation2: 'Backend Developer'
 }
 
 
 type FullstackDeveloper = FrontendDeveloper & BackendDeveloper
 
+
+const fullstackDeveloper: FullstackDeveloper ={
+    skills: ["HTML","CSS","EXPRESS"],
+    designation1: "Frontend Developer",
+    designation2: "Backend Developer"
+}
 
 
 }
