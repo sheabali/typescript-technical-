@@ -12,9 +12,13 @@ const user = {
         address:"BD"
 }
 
-const {contactNo} = user
+const {contactNo, name: {middleName}} = user
 
+// Array Destruturing
 
+const myFirends = ["AA","SD","ED","DS","FV","MO"]
+
+const [,,fb, ...rest]= myFirends
 
 
 
