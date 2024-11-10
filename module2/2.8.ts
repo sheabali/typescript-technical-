@@ -7,14 +7,15 @@
         something: string
     }
 
-    type Todo= {
+    type Post= {
         id: number,
         title: string,
     }
 
-    const getPosts = async () => {
+    const getPosts = async (): Promise<Post> => {
         const response = await fetch('https://my-json-server.typicode.com/typicode/demo/posts')
         const data = await response.json()
+        return data
         console.log(data)
     }
     getPosts()
