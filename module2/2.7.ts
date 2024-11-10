@@ -28,7 +28,7 @@ const getPropertyValue =<X,Y extends keyof X> (obj: X, key: Y) => {
 return obj[key]
 } 
 
-const retult1 = getPropertyValue(user, "address")
+const retult1 = getPropertyValue(car, "model")
 
 
 
