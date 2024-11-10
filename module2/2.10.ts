@@ -11,8 +11,15 @@ type AreaNumber = {
     width: number
 };
 
-type AreaString = {
-    [key in keyof AreaNumber] : boolean
+type Heigth = AreaNumber['heigth']
+
+type AreaString<T> = {
+    [key in keyof T] : T[key]
+}
+
+const area : AreaString<{height: string, width: number}> = {
+height: "32",
+width: 93,
 }
 
 
