@@ -7,6 +7,20 @@
         something: string
     }
 
+    type Todo= {
+        id: number,
+        title: string,
+    }
+
+    const getPosts = async () => {
+        const response = await fetch('https://my-json-server.typicode.com/typicode/demo/posts')
+        const data = await response.json()
+        console.log(data)
+    }
+    getPosts()
+
+
+
      const createPromise = (): Promise<Something> => {
          return new Promise<Something>((resolve, reject) => {
              const data: Something = {something: 'something'}
