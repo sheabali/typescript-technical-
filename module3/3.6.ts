@@ -12,13 +12,25 @@
             this._balance = balance
         }
 
-      public  addDeposit(amount : number){
-            this._balance = this._balance + amount
-        }
+    //   public  addDeposit(amount : number){
+    //         this._balance = this._balance + amount
+    //     }
 
-       public getBalance(){
-            return this._balance
-        }
+    // geter balance 
+
+    
+    public get Balance(){
+        return this._balance
+    }
+
+   public set deposit (amount: number){
+         this._balance = this._balance + amount
+    }
+    
+
+    //    public getBalance(){
+    //         return this._balance
+    //     }
 
     }
 
@@ -29,10 +41,13 @@
     }
 
 
-    const gMAccount = new BankAccount(111, "gm", 20)
-    gMAccount.addDeposit(200)
+    const gMAccount = new BankAccount(111, "gm", 201)
+    // gMAccount.addDeposit(200)
+    gMAccount.deposit = 1
 
-    const myBalance = gMAccount.getBalance()
+    // const myBalance = gMAccount.getBalance()
+
+    const myBalance = gMAccount.Balance;
     console.log(myBalance)
 
     // 
